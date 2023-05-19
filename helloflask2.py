@@ -16,8 +16,8 @@ def index():
     # Add markers to the map
      # popup --> label for the Marker; click on the pins on the map!
     folium.Marker(fashion_mall, popup = 'Fashion Snow Mall', icon=folium.Icon(color='red', icon='glyphicon glyphicon-globe', prefix='fa')).add_to(folium_map)
-   # folium.Marker(las, popup = 'Las Vegas Airport', icon=folium.Icon(color='blue', icon='glyphicon glyphicon-plane')).add_to(my_map)
-   # folium.Marker(black_mnt, popup = 'Black Mountain', icon=folium.Icon(color='green', icon='glyphicon glyphicon-tree-conifer')).add_to(my_map)
+    folium.Marker(las, popup = 'Las Vegas Airport', icon=folium.Icon(color='blue', icon='glyphicon glyphicon-plane')).add_to(my_map)
+   folium.Marker(black_mnt, popup = 'Black Mountain', icon=folium.Icon(color='green', icon='glyphicon glyphicon-tree-conifer')).add_to(my_map)
     return folium_map._repr_html_()
 
 if __name__ == '__main__':
